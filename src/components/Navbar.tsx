@@ -30,8 +30,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="text-xl font-bold tracking-tighter flex items-center gap-2 group">
-          <div className="w-8 h-8 bg-primary rounded-lg rotate-12 group-hover:rotate-0 transition-transform flex items-center justify-center text-white text-xs">A</div>
-          <span>Adeola</span>
+          <div className="w-8 h-8 bg-primary rounded-lg rotate-12 group-hover:rotate-0 transition-transform flex items-center justify-center text-white text-xs">D</div>
+          <span>David</span>
         </a>
 
         {/* Desktop Menu */}

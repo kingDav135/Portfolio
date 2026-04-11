@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="py-12 px-4 border-t border-white/5 bg-background">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2 font-bold tracking-tighter">
-           <div className="w-6 h-6 bg-primary rounded flex items-center justify-center text-[10px] text-white">A</div>
-           <span>Adeola Lagos</span>
+           <div className="w-6 h-6 bg-primary rounded flex items-center justify-center text-[10px] text-white">D</div>
+           <span>David Sterling</span>
         </div>
         
         <p className="text-sm text-foreground/40">

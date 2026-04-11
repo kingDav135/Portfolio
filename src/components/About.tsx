@@ -13,13 +13,13 @@ export default function About() {
             viewport={{ once: true }}
             className="aspect-square glass rounded-[2.5rem] overflow-hidden relative group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent group-hover:opacity-50 transition-opacity" />
-            <div className="flex flex-col items-center justify-center h-full p-12 text-center">
-               <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <span className="text-4xl">👨‍💻</span>
-               </div>
-               <h3 className="text-xl font-bold mb-2">Frontend Specialist</h3>
-               <p className="text-sm text-foreground/40">Optimizing digital performance in Lagos</p>
+            <img 
+              src="/david.png" 
+              alt="David Sterling" 
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+               <p className="text-sm font-medium text-white/90">Frontend Developer in Lagos</p>
             </div>
           </motion.div>
           
@@ -27,7 +27,7 @@ export default function About() {
             <h2 className="text-3xl font-bold mb-6">About Me</h2>
             <div className="space-y-6 text-foreground/70 leading-relaxed">
               <p>
-                As a Frontend Developer based in Lagos, I am passionate about bridging the gap between design and development. I don&apos;t just write code; I craft digital experiences that resonate with users and drive business growth.
+                As a Frontend Developer based in Lagos, I (David) am passionate about bridging the gap between design and development. I don&apos;t just write code; I craft digital experiences that resonate with users and drive business growth.
               </p>
               <p>
                 My approach is rooted in clean, scalable code and a deep understanding of user psychology. I specialize in the modern React ecosystem, with a focus on performance optimization and sleek animations.
