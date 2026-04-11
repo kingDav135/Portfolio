@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: oklch(0.6 0.18 250);
+  --color-accent: oklch(0.7 0.22 180);
+  --color-surface-900: oklch(0.12 0.02 250);
+  --color-surface-800: oklch(0.18 0.02 250);
+  --color-surface-700: oklch(0.24 0.02 250);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: oklch(0.08 0.01 250);
+  --foreground: oklch(0.95 0.01 240);
+  --primary: oklch(0.6 0.18 250);
+  --accent: oklch(0.7 0.22 180);
+  --card: oklch(0.15 0.02 250 / 0.7);
+  --card-border: oklch(0.3 0.02 250 / 0.2);
+}
+
+@layer base {
+  * {
+    border-color: var(--card-border);
+  }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .premium-shadow {
+    box-shadow: 0 0 40px -10px oklch(0.6 0.18 250 / 0.15);
+  }
+}
