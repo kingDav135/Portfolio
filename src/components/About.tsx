@@ -11,12 +11,12 @@ export default function About() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="aspect-square glass rounded-[2.5rem] overflow-hidden relative group"
+            className="aspect-[4/5] w-full max-w-sm mx-auto glass rounded-[2.5rem] overflow-hidden relative group bg-white/5"
           >
             <img 
-              src="/david.png" 
-              alt="David Sterling" 
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              src="/IMG-20260411-WA0001.jpg" 
+              alt="David Olowookere" 
+              className="w-full h-full object-contain object-top transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                <p className="text-sm font-medium text-white/90">Frontend Developer in Lagos</p>

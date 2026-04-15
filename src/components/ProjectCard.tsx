@@ -52,18 +52,23 @@ export default function ProjectCard({ project }: { project: Project }) {
       >
         {/* Project Image Placeholder */}
         <div className="aspect-video w-full bg-surface-800 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
-             <p className="text-sm font-medium text-white/90 translate-y-4 group-hover:translate-y-0 transition-transform">
-               {project.solution}
-             </p>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+            <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+              <h4 className="text-2xl font-bold text-white leading-tight mb-4">
+                {project.title}
+              </h4>
+              <p className="text-sm font-medium text-white/90 leading-relaxed">
+                {project.solution}
+              </p>
+            </div>
           </div>
-          <div className="flex items-center justify-center h-full text-foreground/20 font-bold text-2xl group-hover:scale-110 transition-transform duration-700">
+          <div className="flex items-center justify-center h-full text-foreground/20 font-bold text-2xl group-hover:scale-110 group-hover:opacity-0 transition-all duration-700">
             {project.title}
           </div>
         </div>
 
         <div className="p-8 flex flex-col flex-1">
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap gap-2 mb-2">
             {project.technologies.map((tech) => (
               <span
                 key={tech}
@@ -74,7 +79,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             ))}
           </div>
 
-          <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">
+          <h3 className="text-2xl font-bold mb-5 group-hover:text-primary transition-colors">
             {project.title}
           </h3>
           <p className="text-foreground/60 mb-8 line-clamp-3 text-sm leading-relaxed">

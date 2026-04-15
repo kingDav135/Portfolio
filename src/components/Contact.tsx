@@ -17,7 +17,7 @@ const LinkedinIcon = ({ className }: { className?: string }) => (
 
 export default function Contact() {
   const whatsappNumber = "2348162985334"; // Fixed based on context/placeholder if known, or kept
-  const emailAddress = "hello@creava.io"; // Updated to match premium feel
+  const emailAddress = "opeyemidavidolowookere@gmail.com";
   
   return (
     <section id="contact" className="py-24 px-4 bg-surface-900/50 relative overflow-hidden">

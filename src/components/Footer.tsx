@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2 font-bold tracking-tighter">
            <div className="w-6 h-6 bg-primary rounded flex items-center justify-center text-[10px] text-white">D</div>
-           <span>David Sterling</span>
+           <span>David Olowookere</span>
         </div>
         
         <p className="text-sm text-foreground/40">
