@@ -9,14 +9,14 @@ const projects = [
     solution: "Simplified the ordering process for a boutique bakery, increasing mobile conversion by 40% through a streamlined WhatsApp checkout.",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
     liveUrl: "https://creavabakeshop.netlify.app",
-    githubUrl: "https://github.com/", // Placeholder
+    githubUrl: "https://github.com/kingDav135/Resume-Generator.git",
   },
   {
-    title: "SaaS Dashboard",
-    description: "Enterprise-grade analytics dashboard featuring real-time data visualization, custom charting, and role-based access control.",
-    solution: "Rebuilt the legacy reporting engine, reducing dashboard load times by 2s and improving data accuracy for 5k+ active users.",
-    technologies: ["React", "Highcharts", "PostgreSQL", "Tailwind"],
-    liveUrl: "https://example.com/demo1", // Placeholder
+    title: "Resume Generator",
+    description: "A streamlined resume builder platform that helps users create polished resumes through a guided editing experience and live builder workflow.",
+    solution: "Built a focused resume creation flow that makes it easier for users to structure their details, generate professional resumes, and move from draft to export faster.",
+    technologies: ["React", "JavaScript", "CSS", "Netlify"],
+    liveUrl: "https://resumegeneratee.netlify.app/builder",
     githubUrl: "https://github.com/", // Placeholder
   },
   {
