@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink, Monitor } from "lucide-react";
+import { Monitor } from "lucide-react";
 import PreviewModal from "./PreviewModal";
 
 const GithubIcon = ({ className }: { className?: string }) => (
@@ -18,12 +19,16 @@ interface Project {
   technologies: string[];
   liveUrl: string;
   githubUrl: string;
-  image?: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
 }
 
 export default function ProjectCard({ project }: { project: Project }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const hasImage = Boolean(project.image?.src);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -50,8 +55,28 @@ export default function ProjectCard({ project }: { project: Project }) {
         viewport={{ once: true }}
         className="group relative glass rounded-3xl overflow-hidden flex flex-col h-full hover:border-primary/40 transition-all duration-500"
       >
-        {/* Project Image Placeholder */}
         <div className="aspect-video w-full bg-surface-800 relative overflow-hidden">
+          {hasImage ? (
+            <Image
+              src={project.image?.src}
+              alt={project.image?.alt || `${project.title} project screenshot`}
+              fill
+              unoptimized
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              loading="lazy"
+            />
+          ) : (
+            <div className="flex h-full items-center justify-center bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.16),_transparent_48%),linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))] px-6 text-center text-foreground/25 transition-all duration-700 group-hover:scale-105 group-hover:opacity-80">
+              <div>
+                <p className="text-2xl font-bold">{project.title}</p>
+                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.3em] text-foreground/45">
+                  Screenshot ready to add
+                </p>
+              </div>
+            </div>
+          )}
+
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
             <div className="translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
               <h4 className="text-2xl font-bold text-white leading-tight mb-4">
@@ -61,9 +86,6 @@ export default function ProjectCard({ project }: { project: Project }) {
                 {project.solution}
               </p>
             </div>
-          </div>
-          <div className="flex items-center justify-center h-full text-foreground/20 font-bold text-2xl group-hover:scale-110 group-hover:opacity-0 transition-all duration-700">
-            {project.title}
           </div>
         </div>
 
