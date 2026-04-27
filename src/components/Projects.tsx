@@ -20,11 +20,11 @@ const projects = [
     githubUrl: "https://github.com/", // Placeholder
   },
   {
-    title: "AI Content Studio",
-    description: "A collaborative platform for AI-assisted writing and content generation, featuring live co-editing and prompt libraries.",
-    solution: "Designed and implemented a fluid, multi-user workspace that leverages WebSocket tech for zero-latency collaboration.",
-    technologies: ["Next.js", "OpenAI API", "WebSockets", "Prisma"],
-    liveUrl: "https://example.com/demo2", // Placeholder
+    title: "Edunotech Website",
+    description: "A modern education-focused website built to present EdunoTech's digital offering with a clean interface and clear conversion paths.",
+    solution: "Created a polished brand presence that helps visitors quickly understand the platform, explore services, and engage with the business online.",
+    technologies: ["React", "JavaScript", "CSS", "Netlify"],
+    liveUrl: "https://edunotech.netlify.app/",
     githubUrl: "https://github.com/", // Placeholder
   }
 ];
