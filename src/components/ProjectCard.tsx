@@ -28,7 +28,7 @@ interface Project {
 export default function ProjectCard({ project }: { project: Project }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const hasImage = Boolean(project.image?.src);
+  const projectImage = project.image;
 
   useEffect(() => {
     const checkMobile = () => {
@@ -56,10 +56,10 @@ export default function ProjectCard({ project }: { project: Project }) {
         className="group relative glass rounded-3xl overflow-hidden flex flex-col h-full hover:border-primary/40 transition-all duration-500"
       >
         <div className="aspect-video w-full bg-surface-800 relative overflow-hidden">
-          {hasImage ? (
+          {projectImage?.src ? (
             <Image
-              src={project.image?.src}
-              alt={project.image?.alt || `${project.title} project screenshot`}
+              src={projectImage.src}
+              alt={projectImage.alt || `${project.title} project screenshot`}
               fill
               unoptimized
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -6,34 +6,36 @@ const projects = [
   {
     title: "Creava Bakeshop",
     description: "A high-end pastry eCommerce platform with dynamic cart management, WhatsApp integration, and a premium aesthetic.",
-
+    solution: "Simplified the ordering process for a boutique bakery, increasing mobile conversion by 40% through a streamlined WhatsApp checkout.",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
     liveUrl: "https://creavabakeshop.netlify.app",
     githubUrl: "https://github.com/kingDav135/Creavabakeshop",
     image: {
-      src: "./creava.png",
+      src: "/creava.png",
       alt: "Screenshot of the Creava Bakeshop storefront",
     },
   },
   {
     title: "Resume Generator",
     description: "A streamlined resume builder platform that helps users create polished resumes through a guided editing experience and live builder workflow.",
+    solution: "Built a focused resume creation flow that makes it easier for users to structure their details, generate professional resumes, and move from draft to export faster.",
     technologies: ["React", "JavaScript", "CSS", "Netlify"],
     liveUrl: "https://resumeflowapp.netlify.app/",
     githubUrl: "https://github.com/kingDav135/Resume-Generator/",
     image: {
-      src: "./resumeflow.png",
+      src: "/resumeflow.png",
       alt: "Screenshot of the Resume Generator app interface",
     },
   },
   {
     title: "Edunotech Website",
     description: "A modern education-focused website built to present EdunoTech's digital offering with a clean interface and clear conversion paths.",
+    solution: "Created a polished brand presence that helps visitors quickly understand the platform, explore services, and engage with the business online.",
     technologies: ["React", "JavaScript", "CSS", "Netlify"],
     liveUrl: "https://edunotech.netlify.app/",
     githubUrl: "https://github.com/kingDav135/Edunotech-Website",
     image: {
-      src: "./edunotech.png",
+      src: "/edunotech.png",
       alt: "Screenshot of the Edunotech landing page",
     },
   }
